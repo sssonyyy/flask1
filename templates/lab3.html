@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<form action="/lab3" method="POST">
+        <input type="text" name="list1" placeholder="Площадь">
+        <input type="text" name="list2"  placeholder="Максимальная длина оси">
+        <input type="text" name="list3"  placeholder="Минимальная длина оси">
+       <input type="text" name="list4"  placeholder="Эксцентриситет">
+       <input type="text" name="list5"  placeholder="Выпуклая область">
+        <input type="text" name="list6"  placeholder="Extent">
+        <input type="text" name="list7"  placeholder="Периметр">
+        <button type="submit" >
+            Узнать сорт
+        </button>
+    </form>
+<h1>{{class_model}}</h1>
+{% endblock %}

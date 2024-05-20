@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{{ super() }}
+<p>Бинарное дерево</p>
+<form action="/lab4" method="POST">
+    <p><input type="text" class="form_text" name="list1"> 	Название предмета</p>
+    <p><input name="list2" class="form_text" type="text"> Количество часов</p>
+    <p><input name="list3" class="form_text" type="text"> Средняя успеваемость	</p>
+    <input type="submit" class="form_btn" value="Узнать сложность предмета">
+    <h1>{{class_model}}</h1>
+    </p>
+</form>
+{% endblock %}
